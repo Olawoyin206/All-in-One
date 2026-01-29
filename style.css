@@ -1,0 +1,187 @@
+/* RESET & BASE */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 10px;
+  background-color: #1c1c1c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* MAIN CONTAINER */
+
+#mainContainer {
+  background-color: #000;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(180, 179, 179, 0.15);
+  width: 100%;
+  max-width: 380px;
+}
+
+/* INPUT AREA */
+
+#inputContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+  padding: 10px;
+  height: 28vh;
+}
+
+/* HISTORY */
+
+#historyDisplay {
+  height: 38%;
+  color: gray;
+  font-size: 14px;
+  overflow-y: hidden;
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+#historyDisplay div {
+  text-align: right;
+  opacity: 0.8;
+}
+
+/* INPUT */
+
+#inputDisplay {
+  font-size: 42px;
+  height: 50%;
+  font-weight: bold;
+  text-align: right;
+  color: white;
+  background-color: #000;
+  border: none;
+  padding: 5px 10px;
+}
+
+/* RESULT */
+
+#resultDisplay {
+  display: none;
+  font-size: 20px;
+  color: #e08900;
+  height: 15%;
+  font-weight: bold;
+  text-align: right;
+  background-color: #000;
+  border: none;
+  padding: 5px 10px;
+}
+
+/* BUTTONS */
+
+#buttonsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+#buttonsContainer .buttonRow {
+  display: flex;
+  gap: 8px;
+}
+
+#buttonsContainer button {
+  flex: 1;
+  padding: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: #3b3a3a;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s;
+}
+
+#buttonsContainer button:active {
+  transform: scale(0.96);
+}
+
+#buttonsContainer button:hover {
+  background-color: #575454;
+}
+
+#buttonsContainer .operatorBtn {
+  color: #e08900;
+}
+
+#buttonsContainer .operatorBtn:hover {
+  background-color: #e08900;
+  color: white;
+}
+
+#buttonsContainer #equalsBtn {
+  background-color: #e08900;
+  color: white;
+}
+
+#buttonsContainer #equalsBtn:hover {
+  background-color: #cf7700;
+}
+
+/* FOOTER */
+
+#madewithlove {
+  text-align: center;
+  font-weight: bold;
+  font-size: 13px;
+  color: #cf7700;
+  margin-top: 10px;
+}
+
+  /* MEDIA QUERIES */
+
+/* Small phones */
+@media (max-width: 480px) {
+  #mainContainer {
+    max-width: 100%;
+  }
+
+  #inputDisplay {
+    font-size: 34px;
+  }
+
+  #resultDisplay {
+    font-size: 18px;
+  }
+
+  #buttonsContainer button {
+    padding: 14px;
+    font-size: 16px;
+  }
+}
+
+/*  Tablets */
+@media (max-width: 768px) {
+  #mainContainer {
+    max-width: 420px;
+  }
+}
+
+/*  Laptops */
+@media (min-width: 1024px) {
+  #mainContainer {
+    max-width: 360px;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1400px) {
+  #mainContainer {
+    max-width: 400px;
+  }
+}
