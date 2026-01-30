@@ -6,6 +6,10 @@
     const buttons = document.querySelectorAll("button");
     const clearBtn = document.getElementById("clearBtn");
     const equalsBtn = document.getElementById("equalsBtn");
+    const converterTitle = document.getElementById("converterTitle");
+    const calculatorTitle = document.getElementById("calculatorTitle");
+    const calculatorContainer = document.getElementById("calculatorContainer");
+    const converterContainer = document.getElementById("converterContainer");
 
     // CONSTANTS & STATE
 
@@ -17,6 +21,21 @@
     let justCalculated = false;
 
     // MAIN BUTTON HANDLER
+    converterTitle.addEventListener("click", () => {
+      calculatorContainer.style.display = "none";
+      converterContainer.style.display = "block";
+      calculatorTitle.style.opacity = "0.5";
+      converterTitle.style.opacity = "1";
+    }
+    );
+    calculatorTitle.addEventListener("click", () => {
+      calculatorContainer.style.display = "block";
+      converterContainer.style.display = "none";
+      calculatorTitle.style.opacity = "1";
+      converterTitle.style.opacity = "0.5";
+
+    }
+    );
 
     buttons.forEach((button) => {
       button.addEventListener("click", () => {
