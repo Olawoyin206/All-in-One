@@ -11,7 +11,7 @@ body {
   display: flex;
   justify-content: center;
     align-items: center;
-  min-height: 100vh;
+  min-height: 98vh;
   user-select: none;
 }
 
@@ -23,7 +23,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(240, 240, 240, 0.267);
   width: 100%;
-  max-width: 380px;
+  max-width: 480px;
 
   display: flex;
   flex-direction: column;
@@ -52,6 +52,7 @@ body {
   display: none; /* Only show when active */
   flex: 1; /* Fill remaining space */
   padding: 10px;
+  margin-top: 10px;
   border-radius: 8px;
   color: white;
 }
@@ -85,7 +86,7 @@ body {
   font-size: 18px;
 }
 #calculatorContainer {
-  flex: 1; /* Fill same height as converter */
+  /* flex: 1; Fill same height as converter */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -96,11 +97,9 @@ body {
 #inputContainer {
   display: flex;
   flex-direction: column;
-  background-color: #000000;
   padding: 10px;
   height: 28vh;
-    flex: 1; /* Ensure calculator input area matches converter height */
-  justify-content: space-between;
+   
 }
 
 /* HISTORY */
