@@ -10,7 +10,7 @@ body {
   background-color: #000000;
   display: flex;
   justify-content: center;
-    align-items: center;
+    /* align-items: center; */
   min-height: 98vh;
   user-select: none;
 }
@@ -21,7 +21,7 @@ body {
   background-color: #000;
   padding: 15px;
   border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(240, 240, 240, 0.267);
+  /* box-shadow: 0 2px 10px rgba(240, 240, 240, 0.267); */
   width: 100%;
   max-width: 480px;
 
