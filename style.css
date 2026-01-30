@@ -7,9 +7,10 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 10px;
-  background-color: #000000;
+  background-color: #c9afaf;
   display: flex;
   justify-content: center;
+    align-items: center;
   min-height: 95vh;
   user-select: none;
 }
