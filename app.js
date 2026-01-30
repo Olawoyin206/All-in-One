@@ -103,7 +103,7 @@
     function updateDisplays() {
       inputDisplay.value = currentInput;
       resultDisplay.style.display = "block";
-      inputDisplay.style.fontSize = "50px";
+      inputDisplay.style.fontSize = "40px";
       resultDisplay.style.opacity = "0.7";
       resultDisplay.style.fontSize = "20px";
     }
@@ -155,7 +155,7 @@
         addToHistory(currentInput, result);
 
         resultDisplay.value = "= " + result;
-        resultDisplay.style.fontSize = "30px";
+        resultDisplay.style.fontSize = "25px";
         resultDisplay.style.opacity = "1";
         inputDisplay.style.fontSize = "20px";
 
