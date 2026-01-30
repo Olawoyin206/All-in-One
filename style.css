@@ -10,7 +10,7 @@ body {
   background-color: #000000;
   display: flex;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 98vh;
   user-select: none;
 }
 
@@ -20,7 +20,7 @@ body {
   background-color: #000;
   padding: 15px;
   border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(180, 179, 179, 0.15);
+  /* box-shadow: 0 2px 10px rgba(180, 179, 179, 0.15); */
   width: 100%;
   max-width: 380px;
 }
