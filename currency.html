@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="currency.css">
+</head>
+
+<body>
+    <div id="mainContainer">
+        <div id="titleContainer">
+            <button id="backBtn" class="iconBtn">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <h1 id="currencyTitle">Currency</h1>
+        </div>
+        <div id="currencyContainer">
+            <div id="inputContainer">
+                <!-- <div  id="historyDisplay"></div> -->
+                <div id="inputRow">
+                    <select id="countryList1" name="countryList1">
+                        <option value="NGR">Nigeria</option>
+                        <option value="ALG">Algeria</option>
+                        <option value="EGY">Egypt</option>
+                        <option value="GHA">Ghana</option>
+                        <option value="KEN">Kenya</option>
+                        <option value="SUD">Sudan</option>
+                    </select>
+                    <input type="text" disabled id="currencyInput1" placeholder="0">
+                </div>
+
+
+                <button id="swapBtn">↔</button>
+
+
+
+                <div id="inputRow">
+                    <select id="countryList2" name="countryList2">
+                        <option value="NGR">Nigeria</option>
+                        <option value="ALG">Algeria</option>
+                        <option value="EGY">Egypt</option>
+                        <option value="GHA">Ghana</option>
+                        <option value="KEN">Kenya</option>
+                        <option value="SUD">Sudan</option>
+                    </select>
+                    <input type="text" disabled id="currencyInput2" placeholder="0">
+                </div>
+                <!-- <div id="inputRow">
+                <select id="countryList3" name="countryList3">
+                <option value="NGR">Nigeria</option>
+                <option value="ALG">Algeria</option>
+                <option value="EGY">Egypt</option>
+                <option value="GHA">Ghana</option>
+                <option value="KEN">Kenya</option>
+                <option value="SUD">Sudan</option>
+                </select>
+                <input type="text" disabled id="currencyInput3" placeholder="0"></div> -->
+
+
+            </div>
+            <div id="buttonsContainer">
+
+                <div class="buttonRow">
+                    <button class="operatorBtn" id="clearBtn">AC</button>
+                    <button class="operatorBtn" id="backspaceBtn">⌫</button>
+                    <button class="operatorBtn" id="percentBtn">%</button>
+                    <button class="operatorBtn" id="divideBtn">/</button>
+                </div>
+
+                <div class="buttonRow">
+                    <button id="sevenBtn">7</button>
+                    <button id="eightBtn">8</button>
+                    <button id="nineBtn">9</button>
+                    <button class="operatorBtn" id="multiplyBtn">*</button>
+                </div>
+
+                <div class="buttonRow">
+                    <button id="fourBtn">4</button>
+                    <button id="fiveBtn">5</button>
+                    <button id="sixBtn">6</button>
+                    <button class="operatorBtn" id="subtractBtn">-</button>
+                </div>
+
+                <div class="buttonRow">
+                    <button id="oneBtn">1</button>
+                    <button id="twoBtn">2</button>
+                    <button id="threeBtn">3</button>
+                    <button class="operatorBtn" id="addBtn">+</button>
+                </div>
+
+                <div class="buttonRow">
+                    <button id="doublezeroBtn">00</button>
+                    <button id="zeroBtn">0</button>
+                    <button id="decimalBtn">.</button>
+                    <button class="operatorBtn" id="equalsBtn">=</button>
+
+
+
+                </div>
+
+            </div>
+        </div>
+        <div id="madewithlove">
+            <p>Made with ❤️</p>
+        </div>
+    </div>
+
+</body>
+<script src="currency.js"></script>
+<script src="https://kit.fontawesome.com/a3c27a9b70.js" crossorigin="anonymous"></script>
+
+</html>
